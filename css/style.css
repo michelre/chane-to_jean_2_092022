@@ -1,3 +1,57 @@
 body {
-    font-family:'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    margin:0px;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    display: flex;
+    
+}
+
+.navbar ul li {
+    padding: 40px;
+}
+
+.navbar ul li:hover {
+    border-top: 4px solid #0065FC;
+}
+
+img[src="images/logo/Booki.png"] {
+    height: 50px;
+    width: auto;
+}
+
+
+footer {
+    background-color: #F2F2F2;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around; 
+    
+
+}
+
+.footer-container {
+    
 }

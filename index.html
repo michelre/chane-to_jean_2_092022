@@ -6,17 +6,23 @@
     <title>Booki</title>
     <meta name="viewport" content="width-device-width, initial-scale=1.0, user-scalable=no">
     <script src="https://kit.fontawesome.com/7f6a557a1f.js" crossorigin="anonymous"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <header>
         <!--Logo + Nav + Heading-->
-        <img src="images/logo/Booki.png" alt="Booki logo" />
-        <ul>
-            <li><a href="#hebergements">Hébergements</a></li>
-            <li><a href="#activites">Activités</a></li>
-        </ul>
+        <div class=navbar><img src="images/logo/Booki.png" alt="Booki logo" />
+            <ul>
+                <li><a href="#hebergements">Hébergements</a></li>
+                <li><a href="#activites">Activités</a></li>
+            </ul>
+        </div>
         <h1>Trouvez vote hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
 
@@ -235,26 +241,40 @@
 
     </main>
     <footer>
-        <div>
+        <div class="footer-container">
             <h2>A propos</h2>
             <ul>
-                <li>Fonctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialité</li>
+                <a href="#">
+                    <li>Fonctionnement du site</li>
+                </a>
+                <a href="#">
+                    <li>Conditions générales de vente</li>
+                </a>
+                <a href="#">
+                    <li>Données et confidentialité</li>
+                </a>
             </ul>
         </div>
-        <div>
+        <div class="footer-container">
             <h2>Nos hébergements</h2>
             <ul>
-                <li>Charte qualité</li>
-                <li>Soumettre votre hôtel</li>
+                <a href="#">
+                    <li>Charte qualité</li>
+                </a>
+                <a href="#">
+                    <li>Soumettre votre hôtel</li>
+                </a>
             </ul>
         </div>
-        <div>
+        <div class="footer-container">
             <h2>Assistance</h2>
             <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
+                <a href="#">
+                    <li>Centre d'aide</li>
+                </a>
+                <a href="#">
+                    <li>Nous contacter</li>
+                </a>
             </ul>
         </div>
     </footer>
