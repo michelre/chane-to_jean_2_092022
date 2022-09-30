@@ -1,7 +1,14 @@
 body {
     font-family: 'Raleway', sans-serif;
-    margin:0px;
     line-height: 2;
+    box-sizing: border-box;
+    max-width: 1600px;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 700;
 }
 
 a {
@@ -22,36 +29,104 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    
 }
 
 .navbar ul {
     display: flex;
-    
+    margin-right: 48px;
+    justify-content: space-between;
 }
 
 .navbar ul li {
-    padding: 40px;
+    padding: 32px;
+    text-align: center;
 }
 
 .navbar ul li:hover {
-    border-top: 4px solid #0065FC;
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+    padding-top: 30px;
 }
 
 img[src="images/logo/Booki.png"] {
-    height: 50px;
+    height: 48px;
     width: auto;
+    margin-left: 64px;
 }
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        justify-content: space-around;
+    }
+
+    img[src="images/logo/Booki.png"] {
+        padding-top: 32px;
+
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar ul {
+        padding: 0;
+        margin: 0;
+        justify-items: stretch;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        padding: auto;
+        margin: 0;
+        flex-grow: 1;
+        flex-basis: 50%;
+        padding-top: 16px;
+        padding-bottom: 14px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    .navbar ul li:hover {
+        border-bottom: 2px solid #0065FC;
+        border-top: 0px;
+        padding-top: 16px;
+        
+    }
+    
+}
+
+.herotitle {
+    margin-left: 48px;
+    padding-bottom: 16px;
+}
+
+.herotitle h1, .herotitle p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .herotitle {
+        margin-left: 16px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-right: 24px;
+     }
+}
+
 
 
 footer {
     background-color: #F2F2F2;
     padding-bottom: 60px;
     display: flex;
-    justify-content: space-around; 
-    
+    justify-content: space-around;
+
 
 }
 
-.footer-container {
-    
-}
+.footer-container {}
