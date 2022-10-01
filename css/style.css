@@ -36,6 +36,14 @@ h3 {
     font-weight: 600;
 }
 
+.blue {
+    color:#0065FC;
+}
+
+.gray {
+    color: #F2F2F2;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -227,7 +235,7 @@ button[type="submit"]:hover {
 }
 
 .filter-button {
-    display:inline-flex;
+    display: inline-flex;
     height: 50px;
     font-size: 18px;
     font-weight: 600;
@@ -240,7 +248,8 @@ button[type="submit"]:hover {
     align-items: center;
 }
 
-.filter-button-text, .filter-button-icon {
+.filter-button-text,
+.filter-button-icon {
     display: inline-flex;
     align-items: center;
 }
@@ -254,7 +263,7 @@ button[type="submit"]:hover {
     right: 2px;
     z-index: 1;
     width: 20px;
-   
+
 }
 
 .filter-button-text {
@@ -280,21 +289,23 @@ button[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 768px) {
-.filters-title{
-    width: 100%;
-    margin-bottom: -4px;
-}
-.filter-button {
-    font-size: 16px;
-    margin: 8px;
-}
-.filter-button-icon {
-    border: 1px solid #DEEBFF;
-}
+    .filters-title {
+        width: 100%;
+        margin-bottom: -4px;
+    }
+
+    .filter-button {
+        font-size: 16px;
+        margin: 8px;
+    }
+
+    .filter-button-icon {
+        border: 1px solid #DEEBFF;
+    }
 }
 
 .info-container {
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
@@ -307,7 +318,7 @@ button[type="submit"]:hover {
 
 .info-text {
     line-height: 1;
-   
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -315,11 +326,69 @@ button[type="submit"]:hover {
         align-items: flex-start;
         margin-top: 8px;
     }
+
     .info-text {
         margin-top: 8px;
     }
 }
 
+
+.hebergements {
+    background-color: #F2F2F2;
+    width: 880px;
+    
+}
+
+.hebergements-card-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+    column-gap: 16px;
+}
+
+.hebergements-card {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 4px solid white;
+    border-radius: 16px;
+    width: 240px;
+    height: 216px;
+}
+
+.hebergements-card-image {
+    height: 116px;
+    display: flex;
+  justify-content: center;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.hebergements-card-image img {
+    width: 100%;
+    align-self: center;
+}
+
+.hebergements-card-body {
+    
+    height: 50px;
+    
+    line-height: 0.5;
+    padding-left:16px;
+    padding-bottom: 8px;
+}
+
+.hebergements-card-body p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hebergements-card-body i {
+    padding-top: 16px;
+    
+}
 
 footer {
     background-color: #F2F2F2;
