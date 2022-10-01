@@ -223,6 +223,7 @@ button[type="submit"]:hover {
 .filters-container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 16px;
 }
 
 .filter-button {
@@ -230,7 +231,7 @@ button[type="submit"]:hover {
     height: 50px;
     font-size: 18px;
     font-weight: 600;
-    border: 2px solid #c0bfbf;
+    border: 2px solid #d0cece;
     background-color: white;
     outline: none;
     margin: 16px;
@@ -281,6 +282,7 @@ button[type="submit"]:hover {
 @media only screen and (max-width: 768px) {
 .filters-title{
     width: 100%;
+    margin-bottom: -4px;
 }
 .filter-button {
     font-size: 16px;
