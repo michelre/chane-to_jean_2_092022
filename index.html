@@ -39,33 +39,35 @@
             <form>
                 <div class="search-box">
                     <i class="fa-solid fa-location-dot"></i>
-                    <input class= "input-field" type="search" placeholder="Marseille, France">
-                    <input type="submit" name="" value="Rechercher" >
+                    <input class="input-field" type="search" placeholder="Marseille, France">
+                    <input type="submit" name="" value="Rechercher">
                     <button type="submit" class="btn btn-success">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
             </form>
-            <h2>Filtres</h2>
-            <button>
-                <i class="fa-solid fa-money-bill-wave"></i>
-                Économique
-            </button>
-            <button>
-                <i class="fa-sharp fa-solid fa-person"></i>
-                Familial
-            </button>
-            <button>
-                <i class="fa-solid fa-heart"></i>
-                Romantique
-            </button>
-            <button>
-                <i class="fa-solid fa-dog"></i>
-                Animaux autorisés
-            </button>
-            <div>
-                <i class="fa-solid fa-circle-info"></i>
-                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="filters-container">
+                <h3 class="filters-title">Filtres</h3>
+                <button class="filter-button">
+                    <span class="filter-button-icon"><i class="fa-solid fa-money-bill-wave"></i></span>
+                    <span class="filter-button-text">Économique</span>
+                </button>
+                <button class="filter-button">
+                    <span class="filter-button-icon"><i class="fa-solid fa-child-reaching"></i></span>
+                    <span class="filter-button-text">Familial</span>
+                </button>
+                <button class="filter-button">
+                    <span class="filter-button-icon"><i class="fa-solid fa-heart"></i></span>
+                    <span class="filter-button-text">Romantique</span>
+                </button>
+                <button class="filter-button">
+                    <span class="filter-button-icon"><i class="fa-solid fa-dog"></i></span>
+                    <span class="filter-button-text">Animaux autorisés</span>
+                </button>
+            </div>
+            <div class="info-container" >
+                <div class ="info-icon"><i class="fa-solid fa-circle-info"></i></div>
+                <p class= "info-text">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
         </section>
