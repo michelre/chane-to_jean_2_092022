@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Booki</title>
-    <meta name="viewport" content="width-device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <script src="https://kit.fontawesome.com/7f6a557a1f.js" crossorigin="anonymous"></script>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -37,9 +37,14 @@
         <section id="search">
             <!--search + filters-->
             <form>
-                <i class="fa-solid fa-location-dot"></i>
-                <input type="search" placeholder="Marseille, France">
-                <button>Rechercher</button>
+                <div class="search-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input class= "input-field" type="search" placeholder="Marseille, France">
+                    <input type="submit" name="" value="Rechercher" >
+                    <button type="submit" class="btn btn-success">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
             </form>
             <h2>Filtres</h2>
             <button>

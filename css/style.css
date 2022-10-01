@@ -2,11 +2,11 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 2;
     box-sizing: border-box;
-    max-width: 1600px;
+    max-width: 1500px;
     font-weight: 300;
 }
 
-h1{
+h1 {
     font-size: 22px;
     font-weight: 700;
 }
@@ -30,7 +30,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
 
 .navbar ul {
@@ -93,9 +93,9 @@ img[src="images/logo/Booki.png"] {
         border-bottom: 2px solid #0065FC;
         border-top: 0px;
         padding-top: 16px;
-        
+
     }
-    
+
 }
 
 .herotitle {
@@ -103,7 +103,8 @@ img[src="images/logo/Booki.png"] {
     padding-bottom: 16px;
 }
 
-.herotitle h1, .herotitle p {
+.herotitle h1,
+.herotitle p {
     margin-top: 0px;
     margin-bottom: 0px;
     line-height: 1.5;
@@ -114,8 +115,97 @@ img[src="images/logo/Booki.png"] {
         margin-left: 16px;
         padding-top: 24px;
         padding-bottom: 24px;
-        padding-right: 24px;
-     }
+        padding-right: 40px;
+    }
+}
+
+main {
+    margin-left: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+.search-box {
+    display: flex;
+    width: 424px;
+    border-radius: 16px;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.fa-location-dot {
+    background-color: #F2F2F2;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.input-field {
+    width: auto;
+    padding-left: 16px;
+    outline: none;
+    border: 1px solid #F2F2F2;
+    flex: 1;
+
+}
+
+::placeholder {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    background-color: #0065FC;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 0px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+button[type="submit"] {
+    border-radius: 16px;
+    position: relative;
+    right: 8px;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: white;
+    color: #0065FC;
+}
+
+@media only screen and (min-width: 768px) {
+    button[type="submit"] {
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .search-box {
+        width: 100%;
+    }
+
+    input[value="Rechercher"] {
+        display: none;
+    }
+
 }
 
 
@@ -128,5 +218,3 @@ footer {
 
 
 }
-
-.footer-container {}
