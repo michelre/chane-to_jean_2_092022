@@ -49,7 +49,6 @@ h3 {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .navbar ul {
@@ -61,6 +60,7 @@ h3 {
 .navbar ul li {
     padding: 32px;
     text-align: center;
+    transition: color .5s;
 }
 
 .navbar ul li:hover {
@@ -200,6 +200,7 @@ button[type="submit"] {
     padding-right: 16px;
     border: 0px;
     cursor: pointer;
+    transition: color 0.7s;
 }
 
 input[type="submit"] {
@@ -260,6 +261,7 @@ button[type="submit"]:hover {
 .filter-button-icon {
     display: inline-flex;
     align-items: center;
+    transition: color .7s;
 }
 
 .filter-button-icon {
@@ -271,6 +273,7 @@ button[type="submit"]:hover {
     right: 2px;
     z-index: 1;
     width: 20px;
+    transition: color .7s;
 
 }
 
@@ -478,7 +481,7 @@ p.card-grid-text {
     transition: transform .2s;
 }
 
-.populaires-card-inside-container{
+.populaires-card-inside-container {
     display: flex;
 }
 
@@ -531,13 +534,28 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
 @media only screen and (max-width: 768px) {
     .populaires {
         width: 100%;
+        height: 580px;
         flex-direction: row;
         flex-wrap: wrap;
         border-radius: 0;
-        align-content:;
-        justify-items:center;
-        padding-bottom: 16px;      
+        justify-items: center;
+        align-content: flex-start;
+        gap: 8px;
     }
+
+    .populaires-title {
+        margin-top: 16px;
+    }
+
+    .populaires-title h2 {
+        margin-left: 16px;
+    }
+
+    .populaires-title i {
+        position:relative;
+        left: 16px;
+    }
+
     .populaires-card {
         width: 88%;
     }
