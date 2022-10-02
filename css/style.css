@@ -2,7 +2,7 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 2;
     box-sizing: border-box;
-    max-width: 1500px;
+    max-width: 1400px;
     font-weight: 300;
 }
 
@@ -37,11 +37,11 @@ h3 {
 }
 
 .blue {
-    color:#0065FC;
+    color: #0065FC;
 }
 
 .gray {
-    color: #F2F2F2;
+    color: #d0cece;
 }
 
 .navbar {
@@ -112,7 +112,6 @@ img[src="images/logo/Booki.png"] {
         border-bottom: 2px solid #0065FC;
         border-top: 0px;
         padding-top: 16px;
-
     }
 
 }
@@ -138,14 +137,23 @@ img[src="images/logo/Booki.png"] {
     }
 }
 
-main {
+.search-filter-section,
+.hebergements-section,
+.activites-section {
     margin-left: 48px;
 }
 
 @media only screen and (max-width: 768px) {
-    main {
+
+    .hebergements-section,
+    .activites-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .search-filter-section {
         margin-left: 16px;
-        margin-right: 16px;
+        margin-right: 8px;
     }
 }
 
@@ -318,7 +326,6 @@ button[type="submit"]:hover {
 
 .info-text {
     line-height: 1;
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -333,33 +340,37 @@ button[type="submit"]:hover {
 }
 
 
-.hebergements {
-    background-color: #F2F2F2;
-    width: 880px;
-    border-radius: 16px;
+.hebergements-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
 }
 
 .hebergements-card-container {
-    display:flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: space-around;
     height: 624px;
+    background-color: #F2F2F2;
+    width: 880px;
+    border-radius: 16px;
+
 }
 
 .card-grid-text {
-    width:100%;
+    width: 100%;
     margin-left: 36px;
-    
+
 }
 
-p.card-grid-text{
+p.card-grid-text {
     font-weight: 600;
 }
 
 .card-grid-title {
     margin-bottom: 0;
-    
+
 }
 
 .hebergements-card {
@@ -367,7 +378,12 @@ p.card-grid-text{
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border: 4px solid white;
     border-radius: 16px;
-    width: 240px; 
+    width: 240px;
+    transition: transform .2s;
+}
+
+.hebergements-card:hover {
+    transform: scale(1.05);
 }
 
 .hebergements-card-image {
@@ -384,17 +400,17 @@ p.card-grid-text{
 }
 
 .hebergements-card-body {
-    
+
     height: 50px;
-    
+
     line-height: 0.5;
-    padding-left:16px;
+    padding-left: 16px;
     padding-bottom: 8px;
 }
 
 .hebergements-card-body h3 {
     font-size: 16px;
-    
+
 }
 
 .hebergements-card-body p {
@@ -408,26 +424,124 @@ p.card-grid-text{
 }
 
 @media only screen and (max-width: 768px) {
-    .hebergements {
-        width: 100%;
-        background-color: white;
+
+    .card-grid-text {
+        margin: 16px;
     }
-    .card-grid-text{
-        margin: 4px;
-    }
+
     .hebergements-card-container {
-        height:fit-content;
+        height: fit-content;
+        background-color: white;
+        width: 100%;
     }
+
     .hebergements-card {
-        width: 95%;
+        width: 88%;
         margin: 8px auto;
     }
+
 }
 
+.populaires {
+    background-color: #F2F2F2;
+    width: 420px;
+    height: 624px;
+    border-radius: 16px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
+}
 
+.populaires-title h2 {
+    margin-left: 36px;
+}
 
+.populaires-title i {
+    margin-right: 36px;
+}
+
+.populaires-card {
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border: 4px solid white;
+    border-radius: 16px;
+    width: 346px;
+    transition: transform .2s;
+}
+
+.populaires-card-inside-container{
+    display: flex;
+}
+
+.populaires-card:hover {
+    transform: scale(1.05);
+}
+
+.populaires-card-image {
+    height: 134px;
+    width: 128px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+}
+
+.populaires-card-image img {
+    height: 100%;
+    align-self: center;
+}
+
+img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] {
+    scale: 1.5;
+}
+
+.populaires-card-body {
+    line-height: 0.5;
+    padding-left: 16px;
+    padding-bottom: 8px;
+    width: 160px;
+}
+
+.populaires-card-body h3 {
+    font-size: 16px;
+    line-height: 1.1;
+}
+
+.populaires-card-body p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.populaires-card-body i {
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .populaires {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-radius: 0;
+        align-content:;
+        justify-items:center;
+        padding-bottom: 16px;      
+    }
+    .populaires-card {
+        width: 88%;
+    }
+}
 
 
 
@@ -437,4 +551,10 @@ footer {
     padding-bottom: 60px;
     display: flex;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        width: 100%;
+    }
 }
