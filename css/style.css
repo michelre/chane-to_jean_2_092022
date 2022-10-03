@@ -552,7 +552,7 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     }
 
     .populaires-title i {
-        position:relative;
+        position: relative;
         left: 16px;
     }
 
@@ -560,6 +560,178 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
         width: 88%;
     }
 }
+
+.activites {
+    width: 1352px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+
+.activites h2 {
+    width: 100%;
+}
+
+.card-row-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activites-large-card {
+    height: 448px;
+    width: 304px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: transform .2s;
+}
+
+.activites-large-card:hover {
+    transform: scale(1.05);
+}
+
+.activites-large-card-image {
+    height: 395px;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    display: flex;
+}
+
+img[src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"] {
+    position: relative;
+    right: 50%;
+    height: 100%;
+}
+
+img[src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"] {
+    width: 100%;
+    object-fit: cover;
+}
+
+.activites-card-title {
+    height: 40px;
+
+}
+
+.activites-card-title h3 {
+    margin-left: 16px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.activites-bsize-card {
+    height: 238px;
+    width: 304px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: transform .2s;
+}
+
+.activites-bsize-card:hover {
+    transform: scale(1.05);
+}
+
+.activites-bsize-card-image {
+    height: 185px;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+img[src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] {
+        object-fit: cover;
+        object-position: center;
+        height: 185px;
+        width: 304px;
+}
+
+.activites-csize-card {
+    height: 168px;
+    width: 304px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: transform .2s;
+    
+}
+
+.activites-csize-card:hover {
+    transform: scale(1.05);
+}
+
+.activites-csize-card-image {
+    height: 113px;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+img[src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"] {
+        object-fit: cover;
+        height: 113px;
+        width: 304px;
+}
+
+.activites-dsize-card {
+    height: 196px;
+    width: 304px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: transform .2s;
+    
+}
+
+.activites-dsize-card:hover {
+    transform: scale(1.05);
+}
+
+.activites-dsize-card-image {
+    height: 143px;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+img[src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"] {
+        object-fit: cover;
+        object-position: top;
+        height: 143px;
+        width: 304px;
+}
+
+.activites-esize-card {
+    height: 212px;
+    width: 304px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: transform .2s;
+    
+}
+
+.activites-esize-card:hover {
+    transform: scale(1.05);
+}
+
+.activites-esize-card-image {
+    height: 159px;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
+        object-fit: cover;
+        object-position: top;
+        height: 159px;
+        width: 304px;
+}
+
+
+
+
 
 
 
