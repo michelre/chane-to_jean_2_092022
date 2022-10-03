@@ -2,11 +2,12 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 2;
     box-sizing: border-box;
-    
+
     font-weight: 300;
 }
 
-header main {
+header,
+main {
     max-width: 1400px;
 }
 
@@ -69,8 +70,16 @@ h3 {
 
 .navbar ul li:hover {
     border-top: 2px solid #0065FC;
-    color: #0065FC;
+
     padding-top: 30px;
+}
+
+.navbar ul a {
+    transition: color .5s;
+}
+
+.navbar ul a:hover {
+    color: #0065FC;
 }
 
 img[src="images/logo/Booki.png"] {
@@ -103,7 +112,6 @@ img[src="images/logo/Booki.png"] {
     }
 
     .navbar ul li {
-        padding: auto;
         margin: 0;
         flex-grow: 1;
         flex-basis: 50%;
@@ -583,7 +591,7 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
 .activites-large-card {
@@ -592,7 +600,7 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-    
+
 }
 
 .activites-large-card:hover {
@@ -650,10 +658,10 @@ img[src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"]
 }
 
 img[src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] {
-        object-fit: cover;
-        object-position: center;
-        height: 185px;
-        width: 304px;
+    object-fit: cover;
+    object-position: center;
+    height: 185px;
+    width: 304px;
 }
 
 .activites-csize-card {
@@ -662,7 +670,7 @@ img[src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-    
+
 }
 
 .activites-csize-card:hover {
@@ -677,9 +685,9 @@ img[src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] {
 }
 
 img[src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"] {
-        object-fit: cover;
-        height: 113px;
-        width: 304px;
+    object-fit: cover;
+    height: 113px;
+    width: 304px;
 }
 
 .activites-dsize-card {
@@ -688,7 +696,7 @@ img[src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"] {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-    
+
 }
 
 .activites-dsize-card:hover {
@@ -703,10 +711,10 @@ img[src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"] {
 }
 
 img[src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"] {
-        object-fit: cover;
-        object-position: top;
-        height: 143px;
-        width: 304px;
+    object-fit: cover;
+    object-position: top;
+    height: 143px;
+    width: 304px;
 }
 
 .activites-esize-card {
@@ -715,7 +723,7 @@ img[src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"] {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-    
+
 }
 
 .activites-esize-card:hover {
@@ -730,51 +738,50 @@ img[src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"] {
 }
 
 img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
-        object-fit: cover;
-        object-position: top;
-        height: 159px;
-        width: 304px;
+    object-fit: cover;
+    object-position: top;
+    height: 159px;
+    width: 304px;
 }
 
 @media only screen and (max-width: 768px) {
 
+    .card-row-container {
+        width: 100%;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-items: center;
+        align-content: center;
+        gap: 16px;
+    }
+
     .activites {
         width: 100%;
-        
+        gap: 16px;
+        align-content: flex-end;
     }
-    
+
+    /*
+    .responsive-card {
+        width: 88%;
+        height: 198px;
+        margin: 8px auto;
+    } 
+    */
+
     .activites h2 {
         margin: 16px;
     }
 
-    .activites-large-card {
-        width: 88%;
-        height: 198px;
-        margin: 8px auto;
-    }
-
-    .activites-large-card-image {
-        height: 198px;
-        width: 100%;
-    }
-
-    .card-row-container {
-        width: 100%;
-        height: 580px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        border-radius: 0;
-        justify-items: center;
-        align-content: flex-start;
-        gap: 8px;
-    }
-
 }
+
 
 footer {
     background-color: #F2F2F2;
     padding-bottom: 60px;
-    
+
 }
 
 .footer-container {
@@ -787,7 +794,15 @@ footer {
 footer h2 {
     font-size: 18px;
     margin-bottom: 0;
-    margin-top: 32px;;
+    margin-top: 32px;
+}
+
+footer a {
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    color: #0065FC;
 }
 
 .assistance {
