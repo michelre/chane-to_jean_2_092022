@@ -2,8 +2,12 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 2;
     box-sizing: border-box;
-    max-width: 1400px;
+    
     font-weight: 300;
+}
+
+header main {
+    max-width: 1400px;
 }
 
 h1 {
@@ -770,12 +774,37 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
 footer {
     background-color: #F2F2F2;
     padding-bottom: 60px;
+    
+}
+
+.footer-container {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 48px;
+    gap: 224px;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 32px;;
+}
+
+.assistance {
+    margin-left: 72px;
 }
 
 @media only screen and (max-width: 768px) {
     footer {
         width: 100%;
+    }
+
+    .assistance {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer-container {
+        gap: 0;
     }
 }
