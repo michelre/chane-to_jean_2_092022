@@ -6,9 +6,10 @@ body {
     font-weight: 300;
 }
 
-header,
-main {
+.container {
     max-width: 1400px;
+    margin: auto;
+    padding: 8px;
 }
 
 h1 {
@@ -58,7 +59,6 @@ h3 {
 
 .navbar ul {
     display: flex;
-    margin-right: 48px;
     justify-content: space-between;
 }
 
@@ -85,7 +85,6 @@ h3 {
 img[src="images/logo/Booki.png"] {
     height: 48px;
     width: auto;
-    margin-left: 64px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -129,7 +128,6 @@ img[src="images/logo/Booki.png"] {
 }
 
 .herotitle {
-    margin-left: 48px;
     padding-bottom: 16px;
 }
 
@@ -147,12 +145,6 @@ img[src="images/logo/Booki.png"] {
         padding-bottom: 24px;
         padding-right: 40px;
     }
-}
-
-.search-filter-section,
-.hebergements-section,
-.activites-section {
-    margin-left: 48px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -185,6 +177,8 @@ img[src="images/logo/Booki.png"] {
     padding-bottom: 16px;
     padding-left: 20px;
     padding-right: 20px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 
 .input-field {
@@ -234,7 +228,7 @@ button[type="submit"]:hover {
 
 @media only screen and (min-width: 768px) {
     button[type="submit"] {
-        visibility: hidden;
+        display: none;
     }
 }
 
@@ -267,25 +261,26 @@ button[type="submit"]:hover {
     border-radius: 24px;
     padding: 0;
     align-items: center;
+    transition: all .7s;
 }
 
 .filter-button-text,
 .filter-button-icon {
     display: inline-flex;
     align-items: center;
-    transition: color .7s;
+    /*transition: color .7s linear;*/
 }
 
 .filter-button-icon {
     background-color: #DEEBFF;
     color: #0065FC;
-    padding: 16px;
-    border-radius: 24px;
-    position: relative;
-    right: 2px;
-    z-index: 1;
-    width: 20px;
-    transition: color .7s;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    justify-content: center;
+    margin-left: -5px;
+    transition: color .7s linear;
 
 }
 
@@ -297,18 +292,18 @@ button[type="submit"]:hover {
 
 .filter-button:hover {
     color: #0065FC;
-    border: none;
+    border-color: #0065FC;
     cursor: pointer;
 }
 
 .filter-button:hover .filter-button-icon {
     color: white;
     background-color: #0065FC;
-    margin-left: 2px;
+    /*margin-left: 2px;*/
 }
 
 .filter-button:hover .filter-button-icon {
-    margin-right: 2px;
+    /*margin-right: 2px;*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -362,20 +357,26 @@ button[type="submit"]:hover {
 }
 
 .hebergements-card-container {
-    display: inline-flex;
+    /*display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-around;
-    height: 624px;
+    align-content: space-around;*/
     background-color: #F2F2F2;
     width: 880px;
     border-radius: 16px;
+    padding: 24px;
+
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
 
 }
 
 .card-grid-text {
     width: 100%;
-    margin-left: 36px;
 
 }
 
@@ -389,16 +390,25 @@ p.card-grid-text {
 }
 
 .hebergements-card {
-    background-color: white;
+    /*background-color: white;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border: 4px solid white;
-    border-radius: 16px;
-    width: 240px;
+    border-radius: 16px;*/
+    width: 33%;
+    padding: 16px;
+    box-sizing: border-box;
     transition: transform .2s;
 }
 
 .hebergements-card:hover {
     transform: scale(1.05);
+}
+
+.hebergements-card > a {
+    border-radius: 16px;
+    padding: 4px;
+    background: white;
+    display: block;
 }
 
 .hebergements-card-image {
@@ -574,13 +584,65 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
 }
 
 .activites {
-    width: 1352px;
+    /*width: 1352px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-around;
+    align-content: space-around;*/
     padding-top: 32px;
     padding-bottom: 64px;
+}
+
+.activites-container {
+    display: flex;
+}
+
+.activites-left {
+    display: flex;
+    padding-right: 24px;
+    box-sizing: border-box;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.activites-right {
+    display: flex;
+    padding-left: 24px;
+    box-sizing: border-box;
+    width: 50%;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 767px){
+    .activites-container {
+        flex-wrap: wrap;
+    }
+    .activites-right {
+        width: 100%;
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .activites-left {
+        width: 100%;
+        margin-bottom: 24px;
+        padding-right: 0;
+        flex-wrap: wrap;
+    }
+
+    .activites-large-card {
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .activites-large-card {
+        width: 50% !important;
+    }
+
+    .activites-left, .activites-right {
+        flex-wrap: nowrap;
+    }
 }
 
 .activites h2 {
@@ -596,11 +658,12 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
 
 .activites-large-card {
     height: 448px;
-    width: 304px;
+    width: 50%;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-
+    margin-right: 16px;
+    flex-shrink: 0;
 }
 
 .activites-large-card:hover {
@@ -692,7 +755,6 @@ img[src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"] {
 
 .activites-dsize-card {
     height: 196px;
-    width: 304px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
@@ -719,7 +781,6 @@ img[src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"] {
 
 .activites-esize-card {
     height: 212px;
-    width: 304px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
@@ -768,7 +829,7 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
         width: 88%;
         height: 198px;
         margin: 8px auto;
-    } 
+    }
     */
 
     .activites h2 {
@@ -787,7 +848,6 @@ footer {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 48px;
     gap: 224px;
 }
 
